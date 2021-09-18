@@ -9,7 +9,7 @@ SELECT
       THEN ([Order Details].UnitPrice * Quantity) * Discount
         ELSE 0
       END
-  ) AS Subtotal,
+  ) AS Total,
 
   SUM(Quantity) AS 'Total Units Sold'
 FROM [Order Details]
